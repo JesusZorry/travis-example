@@ -1,0 +1,11 @@
+dist: trusty
+sudo: requiered
+language: php
+php:
+  - '7.1.3'
+  - '7.2'
+  - 'Nigthly'
+install:
+  - composer install
+script:
+  - vendor/bin/phpunit
